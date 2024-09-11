@@ -1,0 +1,3 @@
+[ZoneTransfer]
+ZoneId=3
+HostUrl=https://simplonline-v3-prod-secured.s3.eu-west-3.amazonaws.com/media/file/json/marzime-sqlite3-notebook-66d1bdb418604438838961.json?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3UUI2EO674XMGNJ2%2F20240911%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240911T143554Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=8c6761511c96177736ee23bf371cd60bfc2297e69f295ea7db2853cef90f4226
