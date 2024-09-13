@@ -4,7 +4,7 @@ on:
   push:
     branches: [develop, main]
 jobs:
-  pre-commit:
+  pre-commit_pytest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,12 +18,10 @@ jobs:
         run: |
           pip install pre-commit
 
-      - uses: pre-commit/action@v3.0.1
-      - name: Install dependencies
+      - name: Install requirements
         run: |
-          python -m pip install --upgrade pip
-          pip install setuptools wheel twine
+          pip install -r requirements.txt
 
       - name: Test with pytest
         run: |
-            pytest Migration_de_Pandas_à_PySpark_avec_Tests_Unitaires_et_Automatisation_de_Code/tests/taist.py
+            pytest
