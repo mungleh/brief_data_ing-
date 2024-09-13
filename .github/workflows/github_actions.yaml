@@ -24,4 +24,4 @@ jobs:
 
       - name: Test with pytest
         run: |
-            pytest Migration_de_Pandas_à_PySpark_avec_Tests_Unitaires_et_Automatisation_de_Code/tests/taist.py
+            pytest brief_stéphane/Migration_de_Pandas_à_PySpark_avec_Tests_Unitaires_et_Automatisation_de_Code/tests/taist.py
