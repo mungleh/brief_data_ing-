@@ -23,13 +23,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install setuptools wheel twine
-      - name: Build wheel
-        run: VERSION=${{ github.event.inputs.release-version }} python setup.py bdist_wheel
-      - name: Upload wheel
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ github.event.repository.name }}-${{ github.ref_name }}.whl
-          path: dist/*.whl
       - name: Test with pytest
         run: |
             pytest Migration_de_Pandas_à_PySpark_avec_Tests_Unitaires_et_Automatisation_de_Code/tests/taist.py
