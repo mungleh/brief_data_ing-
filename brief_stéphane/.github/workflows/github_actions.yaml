@@ -32,4 +32,4 @@ jobs:
           path: dist/*.whl
       - name: Test with pytest
         run: |
-            pytest tests/taist.py
+            pytest Migration_de_Pandas_à_PySpark_avec_Tests_Unitaires_et_Automatisation_de_Code/tests/taist.py
