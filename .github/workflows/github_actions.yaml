@@ -20,6 +20,7 @@ jobs:
         run: |
           pip install pre-commit
           pre-commit install
+          git config --global core.hooksPath /path/to/my/centralized/hooks
           pre-commit run --all-files
 
       - name: Install requirements
