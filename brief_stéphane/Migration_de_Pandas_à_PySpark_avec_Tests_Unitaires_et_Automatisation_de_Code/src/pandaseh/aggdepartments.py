@@ -22,7 +22,7 @@ def agg():
 
     # GroupBy et calculs statistiques
     agg_df = (
-        df.groupby('department")
+        df.groupby("department")
         .agg({"visit_count": "sum", "age": ["mean", "max"]})
         .reset_index()
     )
