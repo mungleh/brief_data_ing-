@@ -1,15 +1,17 @@
 name: "Build and Release Python Package in whl"
 run-name: "Package build version: ${{ github.event }}"
+
 on:
   push:
     branches: [develop, main]
+
 jobs:
   pre-commit_pytest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python
 
+      - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: '3.9'
@@ -17,6 +19,7 @@ jobs:
       - name: Install pre-commit
         run: |
           pip install pre-commit
+          pre-commit run --all-files
 
       - name: Install requirements
         run: |
