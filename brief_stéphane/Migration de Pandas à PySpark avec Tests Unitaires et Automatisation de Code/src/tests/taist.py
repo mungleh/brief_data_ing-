@@ -16,10 +16,11 @@ from pysparkeh.conditionalcalculationsmedicalagespark import condo
 from pysparkeh.datafilteringpatientrecordsspark import datao
 from pysparkeh.missingvalueshandlingspark import misso
 
-os.environ['PYARROW_IGNORE_TIMEZONE'] = '1'
+os.environ["PYARROW_IGNORE_TIMEZONE"] = "1"
 
-# def test_agg():
-#     assertDataFrameEqual(agg(), aggo().toPandas())
+
+def test_agg():
+    assertDataFrameEqual(agg(), aggo().toPandas())
 
 
 def test_concat():
