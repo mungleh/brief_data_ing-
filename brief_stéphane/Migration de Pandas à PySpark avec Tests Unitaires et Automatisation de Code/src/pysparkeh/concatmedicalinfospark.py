@@ -9,24 +9,29 @@ from pyspark.sql.types import *
 def concato():
 
     spark = SparkSession.builder.config(
-        'spark.sql.repl.eagerEval.enabled', True,
+        "spark.sql.repl.eagerEval.enabled",
+        True,
     ).getOrCreate()
 
     matrix = [
-        ['John Doe', 'Diabetes'],
-        ['Jane Smith', 'Heart Disease'],
-        ['Alice Brown', 'Hypertension'],
+        ["John Doe", "Diabetes"],
+        ["Jane Smith", "Heart Disease"],
+        ["Alice Brown", "Hypertension"],
     ]
 
-    columns = ['patient_name', 'diagnosis']
+    columns = ["patient_name", "diagnosis"]
 
     df = spark.createDataFrame(matrix, columns)
 
     # print(df)
+    lal = 0
 
-    df = df.withColumn('diagnosis_lower', F.lower(F.col('diagnosis'))).withColumn(
-        'full_info', F.concat_ws(
-            ' - ', F.col('patient_name'), F.col('diagnosis_lower'),
+    df = df.withColumn("diagnosis_lower", F.lower(F.col("diagnosis"))).withColumn(
+        "full_info",
+        F.concat_ws(
+            " - ",
+            F.col("patient_name"),
+            F.col("diagnosis_lower"),
         ),
     )
 
