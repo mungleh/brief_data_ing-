@@ -3,7 +3,7 @@ run-name: "Package build version: ${{ github.event }}"
 
 on:
   push:
-    branches: [develop, main]
+    branches: [main]
 
 jobs:
   pre-commit_pytest:
@@ -16,9 +16,10 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install pre-commit
+      - name: Install and run pre-commit
         run: |
           pip install pre-commit
+          pre-commit install
           pre-commit run --all-files
 
       - name: Install requirements
