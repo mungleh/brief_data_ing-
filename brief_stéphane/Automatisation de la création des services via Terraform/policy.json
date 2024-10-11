@@ -1,0 +1,12 @@
+{
+  "etag": "BwYkHz95yJg=",
+
+  "bindings": [
+  {
+  "members": [
+  "user:mungluh.zonghulu@gmail.com"
+  ],
+  "role": "roles/resourcemanager.projectCreator"
+  }
+  ]
+}
