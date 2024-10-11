@@ -3,34 +3,34 @@ resource "google_storage_bucket_object" "clients" {
  name         = "clients.csv"
  source       = "data/clients.csv"
  content_type = "text/plain"
- bucket       = google_storage_bucket.saissvai.id
+ bucket       = google_storage_bucket.saissvais.id
 }
 
 resource "google_storage_bucket_object" "produits" {
  name         = "produits.csv"
  source       = "data/produits.csv"
  content_type = "text/plain"
- bucket       = google_storage_bucket.saissvai.id
+ bucket       = google_storage_bucket.saissvais.id
 }
 
 resource "google_storage_bucket_object" "stocks" {
  name         = "stocks.csv"
  source       = "data/stocks.csv"
  content_type = "text/plain"
- bucket       = google_storage_bucket.saissvai.id
+ bucket       = google_storage_bucket.saissvais.id
 }
 
 resource "google_storage_bucket_object" "ventes" {
  name         = "ventes.csv"
  source       = "data/ventes.csv"
  content_type = "text/plain"
- bucket       = google_storage_bucket.saissvai.id
+ bucket       = google_storage_bucket.saissvais.id
 }
 
 # CLOUDE FOKTION
 resource "google_storage_bucket_object" "codezip" {
   name   = "code.zip"
-  bucket = google_storage_bucket.codeh.name
+  bucket = google_storage_bucket.codehs.name
   source = "data/code.zip"
 }
 
@@ -44,7 +44,7 @@ resource "google_cloudfunctions2_function" "function" {
     entry_point = "pipi"
     source {
       storage_source {
-        bucket = google_storage_bucket.codeh.name
+        bucket = google_storage_bucket.codehs.name
         object = google_storage_bucket_object.codezip.name
       }
     }
