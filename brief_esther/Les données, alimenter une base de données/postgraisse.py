@@ -5,41 +5,25 @@ import pandas as pd
 import json
 
 clients_csv = pd.read_csv(
-    "brief_esther/Les données, alimenter une base de données/data/csv/clients.csv",
+    "data/csv/clients.csv",
     delimiter=";",
 )
 
 ventes_csv = pd.read_csv(
-    "brief_esther/Les données, alimenter une base de données/data/csv/ventes.csv",
+    "data/csv/ventes.csv",
     delimiter=";",
 )
 produits_sous_categorie_csv = pd.read_csv(
-    "brief_esther/Les données, alimenter une base de données/data/csv/produits_sous_categorie.csv",
+    "data/csv/produits_sous_categorie.csv",
     delimiter=";",
 )
 
-clients_json = pd.json_normalize(
-    json.load(
-        open(
-            "brief_esther/Les données, alimenter une base de données/data/json/clients.json"
-        )
-    )
-)
+clients_json = pd.json_normalize(json.load(open("data/json/clients.json")))
 
-ventes_json = pd.json_normalize(
-    json.load(
-        open(
-            "brief_esther/Les données, alimenter une base de données/data/json/clients.json"
-        )
-    )
-)
+ventes_json = pd.json_normalize(json.load(open("data/json/clients.json")))
 
 produits_sous_categorie_json = pd.json_normalize(
-    json.load(
-        open(
-            "brief_esther/Les données, alimenter une base de données/data/json/clients.json"
-        )
-    )
+    json.load(open("data/json/clients.json"))
 )
 
 table_names = ["clients", "ventes", "produits_sous_categorie"]
