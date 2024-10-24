@@ -1,7 +1,4 @@
-from sqlalchemy import create_engine, Table, Column, Integer, Float, String, MetaData
-from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy.schema import CreateSchema
-import pandas as pd
+from sqlalchemy import create_engine
 import pymongo
 import json
 
