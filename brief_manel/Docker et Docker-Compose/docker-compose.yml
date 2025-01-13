@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  postgres_db:
+    image: postgres:latest
+    container_name: PostgresCont
+    restart: always
+    environment:
+        - POSTGRES_USER=hihi
+        - POSTGRES_PASSWORD=houhou
+    ports:
+        - '5432:5432'
+    volumes:
+        - postgres_db:/var/lib/postgresql/data
+
+  etl:
+    build:
+      context: .
+      dockerfile: Dockerfile_etl
+    image: etl:1.0
+    ports:
+    - 8503:8503
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile_strimleat
+    image: app:1.0
+    ports:
+    - 8504:8504
+
+volumes:
+    postgres_db:
+      driver: local

@@ -1,0 +1,13 @@
+# python base image in the container from Docker Hub
+FROM python:3.8.12-buster
+
+# copy files to the /app folder in the container
+COPY etl.py /app/etl.py
+COPY data/. /app/data/.
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install -r /app/requirements.txt
+
+EXPOSE 8503
+
+CMD ["python","-u","/app/etl.py","--server.port", "8503"]
