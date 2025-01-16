@@ -6,29 +6,54 @@ services:
     container_name: PostgresCont
     restart: always
     environment:
-        - POSTGRES_USER=hihi
-        - POSTGRES_PASSWORD=houhou
+      POSTGRES_USER: hihi
+      POSTGRES_PASSWORD: houhou
+      POSTGRES_DB: postgres
     ports:
-        - '5432:5432'
+      - '5432:5432'
     volumes:
-        - postgres_db:/var/lib/postgresql/data
-
-  etl:
-    build:
-      context: .
-      dockerfile: Dockerfile_etl
-    image: etl:1.0
-    ports:
-    - 8503:8503
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - netlol
 
   app:
     build:
-      context: .
+      context: app/
       dockerfile: Dockerfile_strimleat
     image: app:1.0
     ports:
-    - 8504:8504
+      - '8504:8504'
+    networks:
+      - netlol
+    environment:
+      DB_HOST: postgres_db
+      DB_PORT: 5432
+      DB_USER: hihi
+      DB_PASSWORD: houhou
+      DB_NAME: postgres
+
+  etl:
+    build:
+      context: etl/
+      dockerfile: Dockerfile_etl
+    image: etl:1.0
+    ports:
+      - '8500:8500'
+    networks:
+      - netlol
+    environment:
+      DB_HOST: postgres_db
+      DB_PORT: 5432
+      DB_USER: hihi
+      DB_PASSWORD: houhou
+      DB_NAME: postgres
+
+networks:
+  netlol:
+    name: netlol
+    external: false
+    driver: bridge
 
 volumes:
-    postgres_db:
-      driver: local
+  postgres_data:
+    driver: local

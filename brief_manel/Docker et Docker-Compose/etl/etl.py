@@ -4,16 +4,16 @@ from sqlalchemy.schema import CreateSchema
 import pandas as pd
 
 clients_csv = pd.read_csv(
-    "data/clients.csv",
+    "./app/data/clients.csv",
     delimiter=";",
 )
 
 ventes_csv = pd.read_csv(
-    "data/ventes.csv",
+    "./app/data/ventes.csv",
     delimiter=";",
 )
 produits_sous_categorie_csv = pd.read_csv(
-    "data/produits_sous_categorie.csv",
+    "./app/data/produits_sous_categorie.csv",
     delimiter=";",
 )
 
