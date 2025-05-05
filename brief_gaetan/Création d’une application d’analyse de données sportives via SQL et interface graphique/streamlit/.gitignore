@@ -3,7 +3,6 @@
 *.code-workspace
 todo.txt
 *.ipynb
-.env
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
