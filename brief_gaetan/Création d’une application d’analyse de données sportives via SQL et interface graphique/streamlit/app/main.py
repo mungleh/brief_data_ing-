@@ -12,7 +12,7 @@ conn = psycopg2.connect(
     port="5432"
 )
 
-query = st.text_input("rekaitaissquelle", "")
+query = st.text_input("rekaitaissquelle", "SELECT * FROM public.data;")
 
 def rekait(query):
     try:
