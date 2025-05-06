@@ -1,9 +1,10 @@
 import os
 import psycopg2
+import pandas as pd
+from sqlalchemy import create_engine
 
 # Config
 DATA_DIR = "/opt/airflow/data"
-TEMP_FILE = "/tmp/prepared_file.csv"
 
 DB_CONFIG = {
     'host': 'postgres',
@@ -72,11 +73,11 @@ def create_tables():
             epreuve TEXT,
             epreuve_genre TEXT,
             epreuve_type TEXT,
-            est_epreuve_individuelle BOOLEAN,
-            est_epreuve_olympique BOOLEAN,
-            est_epreuve_ete BOOLEAN,
-            est_epreuve_handi BOOLEAN,
-            epreuve_sens_resultat BOOLEAN,
+            est_epreuve_individuelle FLOAT,
+            est_epreuve_olympique FLOAT,
+            est_epreuve_ete FLOAT,
+            est_epreuve_handi FLOAT,
+            epreuve_sens_resultat FLOAT,
             id_federation FLOAT,
             federation TEXT,
             federation_nom_court TEXT,
@@ -96,7 +97,8 @@ def check_and_register_files():
     conn = get_db_connection()
     cur = conn.cursor()
 
-    for filename in os.listdir(DATA_DIR):
+    # sort pour comencer du début a la fin
+    for filename in sorted(os.listdir(DATA_DIR)):
 
         # Check if file is already registered
         cur.execute("SELECT 1 FROM file_name WHERE filename = %s;", (filename,))
@@ -123,8 +125,7 @@ def insert_file_data():
     # prend nouvelle donnait (compare nom fichier dans data vs file_name)
     cur.execute("""
         SELECT filename FROM file_name
-        WHERE filename NOT IN (SELECT filename FROM data)
-        ORDER BY id ASC LIMIT 1;
+        WHERE filename NOT IN (SELECT filename FROM data);
     """)
     result = cur.fetchone()
 
@@ -133,44 +134,28 @@ def insert_file_data():
         return
 
     filename = result[0]
-    filepath = os.path.join(DATA_DIR, filename)
+    # filepath = os.path.join(DATA_DIR, filename)
 
-    # Prepare temp file with filename as the first column
-    with open(filepath, 'r', encoding='utf-8') as original:
-        # ouvre le csv en liste
-        lines = original.readlines()
+    # ajout colonne nom fichier
+    df = pd.read_csv(f"{DATA_DIR}/{filename}")
+    df.insert(loc=0, column='filename', value=filename)
 
-    # transforme liste enenlever les \n
-    header = lines[0].strip()
-    # rajoute nouvelle colonne filename pour comparaison
-    new_header = "filename," + header
-    # lines[1:] skip la première ligne donc header
-    # f"{filename}," + line.strip() rajoute le faliename a chaque ligne
-    data_rows = [
-    f"{filename}," + line.strip()
-    for line in lines[1:]
-    if line.strip()  # only include non-empty lines
-]
+    # inserage data
+    # Create a list of tupples from the dataframe values
+    tuples = list(set([tuple(x) for x in df.to_numpy()]))
+
+    # transfo liste nom de col en string avec nom colonne séparé par ,
+    cols = ','.join(list(df.columns))
+
+    # crée autant de %s pour chaque colonnes
+    placeholders = ','.join(['%s'] * len(df.columns))
+
+    # SQL query
+    query = f"INSERT INTO data ({cols}) VALUES ({placeholders})"
 
 
-    # Write new rows with filename column to a temporary file
-    with open(TEMP_FILE, "w", encoding='utf-8') as temp:
-        temp.write(new_header + "\n")
-        temp.write("\n".join(data_rows))
-
-    # STDIN load le data qui est ouvert par le with open
-    with open(TEMP_FILE, "r", encoding='utf-8') as f:
-        cur.copy_expert(
-            f"""
-            COPY data ({new_header})
-            FROM STDIN WITH CSV HEADER DELIMITER ',' NULL ''
-            """,
-            f
-        )
-
-    conn.commit()
-
-    cur.execute("INSERT INTO data (filename) VALUES (%s);", (filename,))
+    # répète l'insert de chaque row dans la table
+    cur.executemany(query, tuples)
     conn.commit()
 
     cur.close()

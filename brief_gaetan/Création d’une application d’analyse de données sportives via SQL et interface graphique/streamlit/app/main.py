@@ -1,4 +1,3 @@
-import requests
 import psycopg2
 import pandas as pd
 import streamlit as st
@@ -13,7 +12,7 @@ conn = psycopg2.connect(
     port="5432"
 )
 
-query = st.text_input("rekait aiss cu elle", "")
+query = st.text_input("rekaitaissquelle", "")
 
 def rekait(query):
     try:
@@ -30,3 +29,13 @@ def rekait(query):
 
 if st.button("Run rekait"):
     rekait(query)
+
+if st.button("flush la db"):
+    cursor = conn.cursor()
+    cursor.execute("""
+        DELETE FROM data;
+        DELETE FROM file_name;
+    """)
+    conn.commit()
+    cursor.close()
+    st.write("oeee la db est flush")

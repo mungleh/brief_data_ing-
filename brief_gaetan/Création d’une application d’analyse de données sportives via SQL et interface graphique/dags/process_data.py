@@ -1,12 +1,18 @@
 from airflow import DAG
+from airflow.decorators import task
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 from scripts.file_processor import create_tables, check_and_register_files, insert_file_data
 
+@task
+def only_run_on_even_years(**kwargs):
+    if datetime.now().year % 2 != 0:
+        raise ValueError("Skipping because it's not an even year.")
+
 with DAG(
     dag_id="process_csv_file",
     start_date=datetime(2025, 5, 5),
-    schedule_interval="@hourly",
+    schedule_interval="@yearly",
     catchup=False,
 ) as dag:
 
