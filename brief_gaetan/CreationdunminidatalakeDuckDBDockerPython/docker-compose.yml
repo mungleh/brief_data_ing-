@@ -1,0 +1,47 @@
+version: "3"
+
+services:
+
+  duckdb-app1:
+    build: ./TP1
+    volumes:
+      - ./outputs:/outputs
+    stdin_open: true
+    tty: true
+
+  duckdb-app2:
+    build: ./TP2
+    volumes:
+      - ./outputs:/outputs
+    stdin_open: true
+    tty: true
+    healthcheck:
+      test: ["CMD", "true"]
+      interval: 10s
+      retries: 1
+
+  duckdb-app3:
+    build: ./TP3
+    volumes:
+      - ./outputs:/outputs
+    stdin_open: true
+    tty: true
+    ports:
+      - "8501:8501"
+    healthcheck:
+      test: ["CMD", "true"]
+      interval: 10s
+      retries: 1
+    depends_on:
+      duckdb-app2:
+        condition: service_healthy
+
+  duckdb-app4:
+    build: ./TP4
+    volumes:
+      - ./outputs:/outputs
+    stdin_open: true
+    tty: true
+    depends_on:
+      duckdb-app3:
+        condition: service_healthy
