@@ -42,6 +42,9 @@ services:
       - ./outputs:/outputs
     stdin_open: true
     tty: true
-    depends_on:
-      duckdb-app3:
-        condition: service_healthy
+    ports:
+      - "8502:8502"
+    healthcheck:
+      test: ["CMD", "true"]
+      interval: 10s
+      retries: 1

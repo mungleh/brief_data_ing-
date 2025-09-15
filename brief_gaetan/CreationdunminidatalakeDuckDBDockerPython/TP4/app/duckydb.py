@@ -2,62 +2,71 @@ import plotly.express as px
 import streamlit as st
 import pandas as pd
 import duckdb as dd
+import os
 
+# --- DuckDB connection ---
+con = dd.connect("../outputs/jo.db")
 
+# --- Import Parquet files into DuckDB ---
+files = con.execute("""
+    SELECT DISTINCT filename
+    FROM read_parquet('data/*.parquet', filename=True)
+""").fetchall()
+
+for f in files:
+    file_path = f[0]
+    table_name = os.path.basename(file_path).replace(".parquet", "")
+    safe_table_name = f'"{table_name}"'  # <-- quotes added
+
+    con.execute(f"""
+        CREATE TABLE IF NOT EXISTS {safe_table_name} AS
+        SELECT *
+        FROM read_parquet('{file_path}')
+    """)
+    print(f"Imported {file_path} → {table_name}")
+
+# --- Streamlit config ---
 st.set_page_config(layout="wide")
+st.title("📊 DuckDB Table Manager")
 
-con = dd.connect("../outputs/weather.db")
+# --- List tables ---
+tables = [t[0] for t in con.execute("SHOW TABLES").fetchall()]
 
+if tables:
+    selected_table = st.selectbox("Select a table to preview:", tables)
 
-col1, col2 = st.columns([2, 1])
+    if selected_table:
+        safe_table_name = f'"{selected_table}"'  # <-- quotes added
+        df = con.execute(f"SELECT * FROM {safe_table_name} LIMIT 5").fetchdf()
+        st.write(f"First 5 rows of `{selected_table}`:")
+        st.dataframe(df)
 
-# partie graph
-with col1:
+        # --- Export to Parquet ---
+        parquet_path = os.path.join("../outputs", f"{selected_table}.parquet")
+        if st.button(f"Download `{selected_table}` as Parquet"):
+            full_df = con.execute(f"SELECT * FROM {safe_table_name}").fetchdf()
+            full_df.to_parquet(parquet_path, engine="pyarrow", index=False)
+            st.success(f"Exported `{selected_table}` → {parquet_path}")
 
-    map = con.sql(f'''
-                SELECT * FROM weather;
-                ''')
+        # --- Delete table button ---
+        if st.button(f"Delete table `{selected_table}`"):
+            con.execute(f"DROP TABLE {safe_table_name}")  # <-- quotes added
+            st.success(f"Table `{selected_table}` deleted!")
+            st.experimental_rerun()
 
-    templyon = con.sql(f'''
-                SELECT temperature FROM weather WHERE city = 'Lyon';
-                ''').df()
+st.header("📥 Import CSV as Table")
 
-    temparis = con.sql(f'''
-                SELECT temperature FROM weather WHERE city = 'Paris';
-                ''').df()
+uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+new_table_name = st.text_input("New table name (can start with numbers or special chars)")
 
-    col11, col12 = st.columns ([1, 1])
-    with col11:
-        st.metric(label="Temperature a Lyon", value=templyon['temperature'][0])
-    with col12:
-        st.metric(label="Temperature a Paris", value=temparis['temperature'][0])
+if uploaded_file and new_table_name:
+    if st.button("Import CSV"):
+        safe_table_name = f'"{new_table_name}"'  # <-- quotes added
 
-    fig = px.density_map(map, lat='latitude', lon='longitude', z='temperature', radius=10,
-                            center=dict(lat=46.603354, lon=1.888334), zoom=5,
-                            map_style="open-street-map")
+        df_csv = pd.read_csv(uploaded_file)
+        con.register("tmp_df", df_csv)
+        con.execute(f"CREATE TABLE IF NOT EXISTS {safe_table_name} AS SELECT * FROM tmp_df")
+        con.unregister("tmp_df")
 
-    st.plotly_chart(fig)
-
-
-# partie download + SQL
-with col2:
-
-    @st.cache_data
-    def convert_for_download(df):
-        return df.to_csv().encode("utf-8")
-
-    input = st.text_input("input aisskuaill", "SELECT * FROM weather;")
-
-    lol = con.sql(f'''{input}''').df()
-
-    st.dataframe(lol)
-
-    csv = convert_for_download(lol)
-
-    st.download_button(
-        label="Download CSV",
-        data=csv,
-        file_name="data.csv",
-        mime="text/csv",
-        icon=":material/download:",
-    )
+        st.success(f"CSV imported as table `{new_table_name}`")
+        st.experimental_rerun()

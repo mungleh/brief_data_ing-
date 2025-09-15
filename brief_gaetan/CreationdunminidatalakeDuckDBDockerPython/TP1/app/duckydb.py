@@ -2,7 +2,7 @@ from time import perf_counter
 import duckdb as dd
 
 
-con = dd.connect('covid.db')
+con = dd.connect('../outputs/covid.db')
 
 con.sql(f'''
     CREATE TABLE covide AS
