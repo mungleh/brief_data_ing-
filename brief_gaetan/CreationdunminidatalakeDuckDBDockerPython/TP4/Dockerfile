@@ -8,4 +8,4 @@ COPY ./app /app
 
 EXPOSE 8502
 
-CMD ["streamlit", "run", "duckydb.py", "--server.port=8502"]
+CMD python parquetimport.py && streamlit run duckydb.py --server.port=8502 --server.address=0.0.0.0
