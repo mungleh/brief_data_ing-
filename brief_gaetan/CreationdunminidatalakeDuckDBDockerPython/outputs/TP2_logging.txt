@@ -1,839 +1,111 @@
-lancement du job:2025-09-16 12:51:03
+lancement du job:2025-09-16 13:35:04
 "Arrondissement de" dans les noms de ville supprimé
 ┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
 │       city        │   description   │ temperature │ latitude │ longitude │
 │      varchar      │     varchar     │   double    │  double  │  double   │
 ├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.27 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.94 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.93 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:52:06
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.27 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.94 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.93 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:53:02
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.27 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.94 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.93 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:54:04
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.27 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.94 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.93 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:55:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.27 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.94 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.93 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:56:03
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.33 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:57:03
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.33 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:58:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.33 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 12:59:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.33 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:00:04
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.33 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       17.53 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.71 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.43 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:01:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       18.14 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.66 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:03:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       18.14 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.66 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:04:04
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       18.14 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.66 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:05:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │       18.14 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.66 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:06:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:07:04
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:08:01
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:09:03
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:10:05
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:11:03
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.35 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.09 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       28.61 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       18.38 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.11 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.66 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:12:03
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:13:02
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:14:02
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:15:02
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:16:02
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │       24.75 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       22.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.87 │   50.633 │    3.0586 │
-│ Rennes            │ overcast clouds │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       18.12 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       19.88 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:17:02
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
+│ Paris             │ broken clouds   │       18.65 │  48.8534 │    2.3488 │
 │ Marseille         │ clear sky       │        24.2 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
+│ Lyon              │ overcast clouds │        17.5 │    45.75 │    4.5833 │
+│ Toulouse          │ broken clouds   │       21.99 │  43.6043 │    1.4437 │
+│ Nice              │ overcast clouds │       17.72 │     44.0 │      7.25 │
 │ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
 │ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
 │ Bordeaux          │ broken clouds   │       23.15 │  44.8404 │   -0.5805 │
 │ Lille             │ broken clouds   │       19.19 │   50.633 │    3.0586 │
 │ Rennes            │ broken clouds   │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
+│ Reims             │ broken clouds   │       19.88 │  49.1667 │    4.0833 │
+│ Le Havre          │ broken clouds   │       18.51 │  49.4938 │    0.1077 │
+│ Saint-Étienne     │ overcast clouds │       15.56 │  45.4167 │       4.5 │
+│ Toulon            │ broken clouds   │       24.82 │  43.1167 │    5.9333 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       20.44 │  45.9576 │     4.646 │
+│ Huez              │ overcast clouds │       17.01 │  45.0825 │    6.0585 │
+│ Pouilly-le-Monial │ overcast clouds │       19.39 │  45.9576 │     4.646 │
 ├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
 │ 18 rows                                                        5 columns │
 └──────────────────────────────────────────────────────────────────────────┘
 
-lancement du job:2025-09-16 13:18:02
+lancement du job:2025-09-16 13:37:07
 "Arrondissement de" dans les noms de ville supprimé
 ┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
 │       city        │   description   │ temperature │ latitude │ longitude │
 │      varchar      │     varchar     │   double    │  double  │  double   │
 ├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
+│ Paris             │ broken clouds   │       18.65 │  48.8534 │    2.3488 │
 │ Marseille         │ clear sky       │        24.2 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
+│ Lyon              │ overcast clouds │        17.5 │    45.75 │    4.5833 │
+│ Toulouse          │ broken clouds   │       21.99 │  43.6043 │    1.4437 │
+│ Nice              │ overcast clouds │       17.72 │     44.0 │      7.25 │
 │ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
 │ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
 │ Bordeaux          │ broken clouds   │       23.15 │  44.8404 │   -0.5805 │
 │ Lille             │ broken clouds   │       19.19 │   50.633 │    3.0586 │
 │ Rennes            │ broken clouds   │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
+│ Reims             │ broken clouds   │       19.88 │  49.1667 │    4.0833 │
+│ Le Havre          │ broken clouds   │       18.51 │  49.4938 │    0.1077 │
+│ Saint-Étienne     │ overcast clouds │       15.56 │  45.4167 │       4.5 │
+│ Toulon            │ broken clouds   │       24.82 │  43.1167 │    5.9333 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       20.44 │  45.9576 │     4.646 │
+│ Huez              │ overcast clouds │       17.01 │  45.0825 │    6.0585 │
+│ Pouilly-le-Monial │ overcast clouds │       19.39 │  45.9576 │     4.646 │
 ├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
 │ 18 rows                                                        5 columns │
 └──────────────────────────────────────────────────────────────────────────┘
 
-lancement du job:2025-09-16 13:19:02
+lancement du job:2025-09-16 13:38:02
 "Arrondissement de" dans les noms de ville supprimé
 ┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
 │       city        │   description   │ temperature │ latitude │ longitude │
 │      varchar      │     varchar     │   double    │  double  │  double   │
 ├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
+│ Paris             │ broken clouds   │       18.65 │  48.8534 │    2.3488 │
 │ Marseille         │ clear sky       │        24.2 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
+│ Lyon              │ overcast clouds │        17.5 │    45.75 │    4.5833 │
+│ Toulouse          │ broken clouds   │       21.99 │  43.6043 │    1.4437 │
+│ Nice              │ overcast clouds │       17.72 │     44.0 │      7.25 │
 │ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
 │ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
 │ Bordeaux          │ broken clouds   │       23.15 │  44.8404 │   -0.5805 │
 │ Lille             │ broken clouds   │       19.19 │   50.633 │    3.0586 │
 │ Rennes            │ broken clouds   │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
+│ Reims             │ broken clouds   │       19.88 │  49.1667 │    4.0833 │
+│ Le Havre          │ broken clouds   │       18.51 │  49.4938 │    0.1077 │
+│ Saint-Étienne     │ overcast clouds │       15.56 │  45.4167 │       4.5 │
+│ Toulon            │ broken clouds   │       24.82 │  43.1167 │    5.9333 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       20.44 │  45.9576 │     4.646 │
+│ Huez              │ overcast clouds │       17.01 │  45.0825 │    6.0585 │
+│ Pouilly-le-Monial │ overcast clouds │       19.39 │  45.9576 │     4.646 │
 ├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
 │ 18 rows                                                        5 columns │
 └──────────────────────────────────────────────────────────────────────────┘
 
-lancement du job:2025-09-16 13:20:02
+lancement du job:2025-09-16 13:39:04
 "Arrondissement de" dans les noms de ville supprimé
 ┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
 │       city        │   description   │ temperature │ latitude │ longitude │
 │      varchar      │     varchar     │   double    │  double  │  double   │
 ├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
+│ Paris             │ broken clouds   │       18.65 │  48.8534 │    2.3488 │
 │ Marseille         │ clear sky       │        24.2 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
+│ Lyon              │ overcast clouds │        17.5 │    45.75 │    4.5833 │
+│ Toulouse          │ broken clouds   │       21.99 │  43.6043 │    1.4437 │
+│ Nice              │ overcast clouds │       17.72 │     44.0 │      7.25 │
 │ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
 │ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
 │ Bordeaux          │ broken clouds   │       23.15 │  44.8404 │   -0.5805 │
 │ Lille             │ broken clouds   │       19.19 │   50.633 │    3.0586 │
 │ Rennes            │ broken clouds   │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
+│ Reims             │ broken clouds   │       19.88 │  49.1667 │    4.0833 │
+│ Le Havre          │ broken clouds   │       18.51 │  49.4938 │    0.1077 │
+│ Saint-Étienne     │ overcast clouds │       15.56 │  45.4167 │       4.5 │
+│ Toulon            │ broken clouds   │       24.82 │  43.1167 │    5.9333 │
 │ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       20.44 │  45.9576 │     4.646 │
-├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
-│ 18 rows                                                        5 columns │
-└──────────────────────────────────────────────────────────────────────────┘
-
-lancement du job:2025-09-16 13:21:01
-"Arrondissement de" dans les noms de ville supprimé
-┌───────────────────┬─────────────────┬─────────────┬──────────┬───────────┐
-│       city        │   description   │ temperature │ latitude │ longitude │
-│      varchar      │     varchar     │   double    │  double  │  double   │
-├───────────────────┼─────────────────┼─────────────┼──────────┼───────────┤
-│ Paris             │ broken clouds   │       18.54 │  48.8534 │    2.3488 │
-│ Marseille         │ clear sky       │        24.2 │  43.3333 │       5.5 │
-│ Lyon              │ overcast clouds │       16.95 │    45.75 │    4.5833 │
-│ Toulouse          │ overcast clouds │       20.99 │  43.6043 │    1.4437 │
-│ Nice              │ overcast clouds │        17.7 │     44.0 │      7.25 │
-│ Nantes            │ broken clouds   │       20.96 │  47.1667 │   -1.5833 │
-│ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
-│ Montpellier       │ clear sky       │       26.94 │  43.6109 │    3.8772 │
-│ Bordeaux          │ broken clouds   │       23.15 │  44.8404 │   -0.5805 │
-│ Lille             │ broken clouds   │       19.19 │   50.633 │    3.0586 │
-│ Rennes            │ broken clouds   │       19.55 │  48.1667 │   -1.6667 │
-│ Reims             │ overcast clouds │       17.88 │  49.1667 │    4.0833 │
-│ Le Havre          │ broken clouds   │       17.86 │  49.4938 │    0.1077 │
-│ Saint-Étienne     │ overcast clouds │       19.49 │  45.4167 │       4.5 │
-│ Toulon            │ clear sky       │       24.17 │  43.1167 │    5.9333 │
-│ Strasbourg        │ broken clouds   │       19.02 │  48.5834 │     7.743 │
-│ Huez              │ overcast clouds │       16.81 │  45.0825 │    6.0585 │
-│ Pouilly-le-Monial │ overcast clouds │       20.44 │  45.9576 │     4.646 │
+│ Huez              │ overcast clouds │       17.01 │  45.0825 │    6.0585 │
+│ Pouilly-le-Monial │ overcast clouds │       19.39 │  45.9576 │     4.646 │
 ├───────────────────┴─────────────────┴─────────────┴──────────┴───────────┤
 │ 18 rows                                                        5 columns │
 └──────────────────────────────────────────────────────────────────────────┘

@@ -6,7 +6,7 @@ con = dd.connect("../outputs/jo.db")
 # --- Import Parquet files ---
 files = con.execute("""
     SELECT DISTINCT filename
-    FROM read_parquet('data/*.parquet', filename=True)
+    FROM read_parquet('datae/*.parquet', filename=True)
 """).fetchall()
 
 for f in files:
