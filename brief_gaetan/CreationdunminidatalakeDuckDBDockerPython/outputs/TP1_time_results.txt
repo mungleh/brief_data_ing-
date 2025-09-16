@@ -15,7 +15,7 @@ Country/Region  Confirmed  Deaths  Recovered  Active  New cases  New deaths  New
          Chile     347923    9187     319954   18782       2133          75           1859                2.64                  91.96                    2.87               333029          14894               4.47              Americas
 United Kingdom     301708   45844       1437  254427        688           7              3               15.19                   0.48                 3190.26               296944           4764               1.60                Europe
           Iran     293606   15912     255144   22550       2434         212           1931                5.42                  86.90                    6.24               276202          17404               6.30 Eastern Mediterranean
-Elapsed time: 0.004763800000091578
+Elapsed time: 0.0007570879997729207
 
 
         SELECT MEAN("1 week % increase")
@@ -23,7 +23,7 @@ Elapsed time: 0.004763800000091578
     
  mean("1 week % increase")
                  13.606203
-Elapsed time: 0.00043832800020027207
+Elapsed time: 0.0005286619998514652
 
 
         SELECT
@@ -39,7 +39,7 @@ Elapsed time: 0.00043832800020027207
       Western Pacific        292428.0
 Eastern Mediterranean       1490744.0
       South-East Asia       1835297.0
-Elapsed time: 0.0004814300000361982
+Elapsed time: 0.0005316619999575778
 
 
         SELECT *
@@ -58,7 +58,7 @@ Country/Region  Confirmed  Deaths  Recovered  Active  New cases  New deaths  New
          Chile     347923    9187     319954   18782       2133          75           1859                2.64                  91.96                    2.87               333029          14894               4.47              Americas
 United Kingdom     301708   45844       1437  254427        688           7              3               15.19                   0.48                 3190.26               296944           4764               1.60                Europe
           Iran     293606   15912     255144   22550       2434         212           1931                5.42                  86.90                    6.24               276202          17404               6.30 Eastern Mediterranean
-Elapsed time: 0.08121490999974412
+Elapsed time: 0.08017257799974686
 
 
         SELECT MEAN("1 week % increase")
@@ -66,7 +66,7 @@ Elapsed time: 0.08121490999974412
     
  mean("1 week % increase")
                  13.606203
-Elapsed time: 0.07889968000017689
+Elapsed time: 0.06444003799970233
 
 
         SELECT
@@ -76,13 +76,13 @@ Elapsed time: 0.07889968000017689
         GROUP BY "WHO Region";
     
            WHO Region  sum(Confirmed)
-Eastern Mediterranean       1490744.0
-      South-East Asia       1835297.0
                Europe       3299523.0
                Africa        723207.0
+Eastern Mediterranean       1490744.0
+      South-East Asia       1835297.0
              Americas       8839286.0
       Western Pacific        292428.0
-Elapsed time: 0.060565967000002274
+Elapsed time: 0.0632768020000185
 
 
         SELECT *
@@ -101,7 +101,7 @@ Country/Region  Confirmed  Deaths  Recovered  Active  New cases  New deaths  New
          Chile     347923    9187     319954   18782       2133          75           1859                2.64                  91.96                    2.87               333029          14894               4.47              Americas
 United Kingdom     301708   45844       1437  254427        688           7              3               15.19                   0.48                 3190.26               296944           4764               1.60                Europe
           Iran     293606   15912     255144   22550       2434         212           1931                5.42                  86.90                    6.24               276202          17404               6.30 Eastern Mediterranean
-Elapsed time: 0.001039679999848886
+Elapsed time: 0.001289950000227691
 
 
         SELECT MEAN("1 week % increase")
@@ -109,7 +109,7 @@ Elapsed time: 0.001039679999848886
     
  mean("1 week % increase")
                  13.606203
-Elapsed time: 0.0008762679999563261
+Elapsed time: 0.0011096299999735493
 
 
         SELECT
@@ -119,11 +119,11 @@ Elapsed time: 0.0008762679999563261
         GROUP BY "WHO Region";
     
            WHO Region  sum(Confirmed)
-             Americas       8839286.0
-      Western Pacific        292428.0
-               Europe       3299523.0
-               Africa        723207.0
 Eastern Mediterranean       1490744.0
       South-East Asia       1835297.0
-Elapsed time: 0.0012163940000391449
+               Europe       3299523.0
+               Africa        723207.0
+             Americas       8839286.0
+      Western Pacific        292428.0
+Elapsed time: 0.0009741140002006432
 
