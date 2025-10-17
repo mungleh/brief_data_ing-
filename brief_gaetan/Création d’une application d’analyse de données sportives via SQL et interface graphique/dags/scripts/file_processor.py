@@ -123,7 +123,6 @@ def insert_file_data():
     conn = get_db_connection()
     cur = conn.cursor()
 
-    # prend nouvelle donnait (compare nom fichier dans data vs file_name)
     cur.execute("""
         SELECT filename FROM file_name
         WHERE filename NOT IN (SELECT filename FROM data);
@@ -131,37 +130,28 @@ def insert_file_data():
     result = cur.fetchone()
 
     if result is None:
-        print("Table a jour, skipp")
+        print("Table à jour, skip")
         return
 
     filename = result[0]
-    # filepath = os.path.join(DATA_DIR, filename)
 
-    # ajout colonne nom fichier
     df = pd.read_csv(f"{DATA_DIR}/{filename}")
     df.insert(loc=0, column='filename', value=filename)
 
-    # inserage data
-    # Create a list of tupples from the dataframe values
-    tuples = list(set([tuple(x) for x in df.to_numpy()]))
+    # 🔥 Convertir les NaN pandas en None Python
+    df = df.where(pd.notnull(df), None)
 
-    # transfo liste nom de col en string avec nom colonne séparé par ,
+    tuples = [tuple(x) for x in df.to_numpy()]
     cols = ','.join(list(df.columns))
-
-    # crée autant de %s pour chaque colonnes
     placeholders = ','.join(['%s'] * len(df.columns))
-
-    # SQL query
     query = f"INSERT INTO data ({cols}) VALUES ({placeholders})"
 
-
-    # répète l'insert de chaque row dans la table
     cur.executemany(query, tuples)
     conn.commit()
-
     cur.close()
     conn.close()
-    print(f"data ajouté pour: {filename}")
+    print(f"✅ data ajouté pour: {filename}")
+
 
 
 def sodascan():
