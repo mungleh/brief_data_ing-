@@ -1,7 +1,7 @@
-data_source my_database_name:
+data_source pipi:
   type: postgres
   connection:
-    host: localhost
+    host: postgres
     port: '5432'
     username: airflow
     password: airflow

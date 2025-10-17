@@ -1,2 +1,2 @@
-checks for athlete_prenom:
+checks for data:
   - missing_count(athlete_prenom) = 0

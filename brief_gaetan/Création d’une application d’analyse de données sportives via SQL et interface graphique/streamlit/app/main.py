@@ -39,3 +39,15 @@ if st.button("flush la db"):
     conn.commit()
     cursor.close()
     st.write("oeee la db est flush")
+
+if st.button("nettoia lai tableh"):
+    cursor = conn.cursor()
+    cursor.execute("""
+        DELETE FROM data
+        WHERE athlete_prenom IS NULL
+        OR TRIM(athlete_prenom) = ''
+        OR LOWER(athlete_prenom) = 'nan';
+    """)
+    conn.commit()
+    cursor.close()
+    st.write("oeee las tables est propr")

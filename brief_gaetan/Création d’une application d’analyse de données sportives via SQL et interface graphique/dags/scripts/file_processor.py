@@ -163,7 +163,15 @@ def insert_file_data():
     conn.close()
     print(f"data ajouté pour: {filename}")
 
+
 def sodascan():
-    """Run a Soda scan using subprocess"""
-    command = ["soda", "scan", "-d", "postgres", "-c", "soda.yml", "sodacheck.yml"]
-    subprocess.run(command, check=True)
+    command = [
+        "soda", "scan",
+        "-d", "pipi",
+        "-c", "/opt/airflow/dags/scripts/soda.yaml",
+        "/opt/airflow/dags/scripts/sodacheck.yaml"
+    ]
+    result = subprocess.run(command, capture_output=True, text=True)
+
+    if result.returncode != 0:
+        raise RuntimeError(f"Soda scan failed with exit code {result.returncode}")

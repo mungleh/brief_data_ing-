@@ -51,7 +51,7 @@ with DAG(
 with DAG(
     dag_id="sodacheck",
     start_date=datetime(2025, 5, 5),
-    schedule_interval="*/5 * * * *",
+    schedule_interval=None,
     catchup=False,
     is_paused_upon_creation=False
 ) as dag:
