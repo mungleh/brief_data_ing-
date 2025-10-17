@@ -1,0 +1,2 @@
+checks for athlete_prenom:
+  - missing_count(athlete_prenom) = 0

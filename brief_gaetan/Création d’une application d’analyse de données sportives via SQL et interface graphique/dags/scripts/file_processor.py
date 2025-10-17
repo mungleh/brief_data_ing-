@@ -1,7 +1,9 @@
 import os
 import psycopg2
+import subprocess
 import pandas as pd
 from sqlalchemy import create_engine
+
 
 # Config
 DATA_DIR = "/opt/airflow/data"
@@ -117,7 +119,6 @@ def check_and_register_files():
     return filename
 
 
-
 def insert_file_data():
     conn = get_db_connection()
     cur = conn.cursor()
@@ -161,3 +162,8 @@ def insert_file_data():
     cur.close()
     conn.close()
     print(f"data ajouté pour: {filename}")
+
+def sodascan():
+    """Run a Soda scan using subprocess"""
+    command = ["soda", "scan", "-d", "postgres", "-c", "soda.yml", "sodacheck.yml"]
+    subprocess.run(command, check=True)
