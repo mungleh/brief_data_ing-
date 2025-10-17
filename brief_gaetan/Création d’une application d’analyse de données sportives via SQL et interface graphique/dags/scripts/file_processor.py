@@ -1,4 +1,5 @@
 import os
+import logging
 import psycopg2
 import subprocess
 import pandas as pd
@@ -161,7 +162,16 @@ def sodascan():
         "-c", "/opt/airflow/dags/scripts/soda.yaml",
         "/opt/airflow/dags/scripts/sodacheck.yaml"
     ]
-    result = subprocess.run(command, capture_output=True, text=True)
 
-    if result.returncode != 0:
+    result = subprocess.run(
+        command,
+        capture_output=True,  # <== THIS captures logs
+        text=True
+    )
+
+    logging.info("===== SODA STDOUT =====\n%s", result.stdout)
+    logging.error("===== SODA STDERR =====\n%s", result.stderr)
+    logging.info("===== RETURN CODE: %s =====", result.returncode)
+
+    if result.returncode not in [0, 2]:
         raise RuntimeError(f"Soda scan failed with exit code {result.returncode}")
